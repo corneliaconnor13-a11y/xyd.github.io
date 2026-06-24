@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>XU YIDAN — Industrial Design Engineer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<style>
+
+:root{
+--bg:#f7f6f2;
+--text:#111111;
+--sub:#666666;
+--line:#e5e5e5;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:var(--bg);
+color:var(--text);
+overflow-x:hidden;
+}
+
+section{
+padding:120px 8vw;
+}
+
+.small-label{
+font-size:12px;
+letter-spacing:3px;
+text-transform:uppercase;
+color:#777;
+margin-bottom:20px;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.hero-name{
+font-size:clamp(22px,3vw,40px);
+font-weight:600;
+margin-bottom:40px;
+letter-spacing:2px;
+}
+
+.hero-title{
+font-size:clamp(80px,14vw,220px);
+font-weight:900;
+line-height:0.88;
+letter-spacing:-0.06em;
+max-width:1200px;
+}
+
+.hero-desc{
+margin-top:40px;
+max-width:700px;
+font-size:20px;
+line-height:1.8;
+color:var(--sub);
+}
+
+.manifesto{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
+align-items:start;
+}
+
+.section-title{
+font-size:clamp(50px,6vw,100px);
+font-weight:800;
+line-height:0.95;
+}
+
+.manifesto-text{
+font-size:22px;
+line-height:1.9;
+color:#333;
+}
+
+.divider{
+height:1px;
+background:var(--line);
+margin-top:60px;
+}
+
+.focus-item{
+padding:50px 0;
+border-top:1px solid var(--line);
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.focus-item span:first-child{
+font-size:14px;
+color:#999;
+}
+
+.focus-item span:last-child{
+font-size:clamp(30px,4vw,70px);
+font-weight:700;
+}
+
+.contact{
+background:#111;
+color:white;
+}
+
+.contact .section-title{
+color:white;
+}
+
+.contact-content{
+margin-top:50px;
+font-size:24px;
+line-height:2;
+}
+
+.contact a{
+color:white;
+text-decoration:none;
+font-weight:700;
+}
+
+.footer{
+padding:50px;
+text-align:center;
+font-size:14px;
+color:#888;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(80px);
+}
+
+@media(max-width:900px){
+
+.manifesto{
+grid-template-columns:1fr;
+}
+
+.hero-title{
+font-size:22vw;
+}
+
+.section-title{
+font-size:70px;
+}
+
+.manifesto-text{
+font-size:18px;
+}
+
+.focus-item span:last-child{
+font-size:36px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-name reveal">
+XU YIDAN
+</div>
+
+<h1 class="hero-title reveal">
+DESIGNING<br>
+SYSTEMS<br>
+FOR THE<br>
+FUTURE.
+</h1>
+
+<p class="hero-desc reveal">
+Industrial Design Engineer exploring the intersection of
+Artificial Intelligence, Digital Products and Human Experience.
+Creating meaningful interactions between people, technology and future systems.
+</p>
+
+</section>
+
+<section>
+
+<div class="manifesto">
+
+<div>
+
+<div class="small-label reveal">
+MANIFESTO
+</div>
+
+<h2 class="section-title reveal">
+Products<br>
+are not<br>
+objects.
+</h2>
+
+</div>
+
+<div class="manifesto-text reveal">
+
+I believe design is more than creating objects.
+
+It is about shaping systems,
+building experiences,
+and connecting technology with people.
+
+My work focuses on industrial design,
+artificial intelligence,
+digital development,
+and future interactions.
+
+Every project is an exploration
+of how design can simplify complexity
+and create meaningful value.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="small-label reveal">
+AREAS OF EXPLORATION
+</div>
+
+<div class="divider"></div>
+
+<div class="focus-item reveal">
+<span>01</span>
+<span>Artificial Intelligence</span>
+</div>
+
+<div class="focus-item reveal">
+<span>02</span>
+<span>Programming & Development</span>
+</div>
+
+<div class="focus-item reveal">
+<span>03</span>
+<span>Research & Writing</span>
+</div>
+
+</section>
+
+<section class="contact">
+
+<div class="small-label reveal">
+CONTACT
+</div>
+
+<h2 class="section-title reveal">
+Let's Build<br>
+Future Experiences.
+</h2>
+
+<div class="contact-content reveal">
+
+For collaboration,
+research,
+or future opportunities.
+
+<br><br>
+
+<a href="mailto:987052134@qq.com">
+987052134@qq.com
+</a>
+
+</div>
+
+</section>
+
+<footer class="footer">
+Designed with Curiosity · Powered by Creativity & Technology
+</footer>
+
+<script>
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".hero-name",{
+opacity:0,
+y:50,
+duration:1
+});
+
+gsap.from(".hero-title",{
+opacity:0,
+y:100,
+duration:1.2,
+delay:0.3
+});
+
+gsap.from(".hero-desc",{
+opacity:0,
+y:60,
+duration:1,
+delay:0.8
+});
+
+gsap.utils.toArray(".reveal").forEach(item=>{
+
+gsap.to(item,{
+opacity:1,
+y:0,
+duration:1,
+ease:"power3.out",
+scrollTrigger:{
+trigger:item,
+start:"top 85%"
+}
+});
+
+});
+
+</script>
+
+</body>
+</html>
